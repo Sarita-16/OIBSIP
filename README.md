@@ -3,4 +3,4 @@ OASIS INFOBYTE ( Web Development and Designing ) Internship.
 
 
 
-Portfolio : https://github.com/Sarita-16/CodeClause_Portfolio_Website
+Portfolio : https://sarita-16.github.io/Portfolio_Website/
