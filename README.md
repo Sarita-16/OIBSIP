@@ -3,4 +3,5 @@ OASIS INFOBYTE ( Web Development and Designing ) Internship.
 
 
 
-Portfolio : https://sarita-16.github.io/Portfolio_Website/
+Landing Page : https://sarita-16.github.io/landingPage/
+Personal Portfolio : https://sarita-16.github.io/Portfolio_Website/
