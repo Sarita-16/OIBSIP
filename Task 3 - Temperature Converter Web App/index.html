@@ -3,7 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="temperature.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Temperature Converter</h1>
+        <span class="Temperature-icon"
+          ><i class="fa-solid fa-temperature-quarter"></i
+        ></span>
+      </div>
+
+      <div id="celcius">
+        <input type="number" name="celcius" placeholder="Celcius" />
+        <span class="icon">&#8451</span>
+      </div>
+
+      <div id="fahrenheit">
+        <input type="number" name="fahrenheit" placeholder="Fahrenheit" />
+        <span class="icon">&#8457</span>
+      </div>
+
+      <div class="buttonBox">
+        <button>Clear</button>
+      </div>
+    </div>
+
+    <script src="temperature.js"></script>
+  </body>
 </html>
