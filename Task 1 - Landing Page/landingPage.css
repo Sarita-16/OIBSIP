@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Borel', cursive;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(back.avif) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+header .navigation a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+header .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+
+header .navigation a:hover{
+    background:#f6e16a;;
+}
+
+.content {
+    margin: 60px 100px;
+}
+
+.info h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: rgb(2, 39, 55);
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.info h2 span {
+    color: #4c4103;
+}
+
+.textPic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    justify-content: center;
+    text-align: center;
+}
+
+.textPic img {
+    width: 480px;
+    border-radius: 8px;
+    margin-left: 40px;
+}
+
+.info p {
+    margin-bottom: 25px;
+}
+
+.info .info-btn {
+    text-decoration: none;
+    color: black;
+    background: #f6e16a;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 2px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+.info .info-btn:hover {
+    background-color: #fad400; 
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.media-icons a {
+    position: relative;
+    color: black;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+
+.media-icons a:hover {
+    transform: scale(1.5);
+}
+
+
+label {
+    display: none;
+}
+
+#check {
+    z-index: 3;
+    display: none;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 960px) {
+    header .navigation {
+        display: none;
+    }
+
+    label{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color;
+    }
+
+    label:hover {
+        color: black;
+    }
+
+    label .fa-xmark {
+        display: none;
+    }
+
+    #check:checked ~ header .navigation {
+        z-index: 2;
+        position: fixed;
+        background: rgba(114, 223, 255, 0.9);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked ~ header .navigation a {
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+
+    #check:checked ~ header label .fa-bars {
+        display: none;
+    }
+
+    #check:checked ~ header label .fa-xmark {
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+
+    label .fa-bars {
+        position: absolute;
+    }
+
+    header .logo {
+        position: absolute;
+    }
+
+    .content .textPic .info h2 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .content .textPic .info h2 span {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .content .textPic .info p {
+        font-size: 14px;   
+    }
+}
+
+
+
+@media (max-width: 560px){
+    .content .textPic .info h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .content .textPic .info h2 span {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .content .textPic .info p {
+        font-size: 14px;   
+    }
+}
+
